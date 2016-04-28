@@ -4471,3 +4471,6 @@ article {
   background-color: #fefefe; }
   article .entry-content, article #comments {
     padding: 1rem; }
+
+.excerpt-read-more {
+  font-style: italic; }

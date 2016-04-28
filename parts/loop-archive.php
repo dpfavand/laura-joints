@@ -15,7 +15,7 @@
     
 	<section class="entry-content" itemprop="articleBody">
         <?php get_template_part( 'parts/content', 'byline' ); ?>
-		<?php the_content('<button class="tiny">Read more...</button>'); ?>
+		<?php the_excerpt(); ?>
 	</section> <!-- end article section -->
 						
 	<footer class="article-footer">
