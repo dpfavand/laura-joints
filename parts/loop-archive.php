@@ -1,11 +1,20 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">					
 	<header class="article-header">
-		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-		<?php get_template_part( 'parts/content', 'byline' ); ?>
+        <a href="<?php the_permalink() ?>">
+        <div class="article-header-background" style="background-image: url('<?php echo the_post_thumbnail_url('large') ?>')">
+        </div>
+        <div class="article-header-text">
+            <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+            </a>
+            
+        </div>
+        </a>
 	</header> <!-- end article header -->
-					
+	
+    
+    
 	<section class="entry-content" itemprop="articleBody">
-		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('full'); ?></a>
+        <?php get_template_part( 'parts/content', 'byline' ); ?>
 		<?php the_content('<button class="tiny">Read more...</button>'); ?>
 	</section> <!-- end article section -->
 						

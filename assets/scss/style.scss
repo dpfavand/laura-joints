@@ -71,8 +71,16 @@ CSS file.
 // Import your print styles
 @import "print";
 
+body {
+    background-image: url('../images/dots.png');
+}
+
+.header-container {
+    background-color: $white;
+}
+
 .header {
-	background-color: $secondary-color;
+	// background-color: $secondary-color;
 	
 	@include breakpoint(medium) {
     	border-bottom-left-radius: $global-radius;
@@ -82,6 +90,7 @@ CSS file.
 	
 	.hlogo {
 			padding: $menu-item-padding;
+            font-style: italic;
 			
 			@each $size, $headers in $header-sizes {
     			@include breakpoint($size) {
@@ -103,4 +112,45 @@ CSS file.
 
 img {
 	border-radius: $global-radius;
+}
+
+.article-header {
+    position: relative;
+    height: 400px;
+    background-color: $dark-gray;
+    
+    .article-header-background {
+        position: relative;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        background-size: cover;
+        
+    }
+    
+    .article-header-text {
+        position: absolute;
+        bottom: 0px;
+        // padding: 1rem;
+        
+        h2, h1 {
+            margin-bottom: 0px;
+            color: $white;
+                font-style: italic;
+                
+            
+            a {
+                color: $white;
+                font-size: 150%;
+            }
+        }
+    }
+}
+
+article {
+    background-color: $white;
+    
+    .entry-content {
+        padding: 1rem;
+    }
 }

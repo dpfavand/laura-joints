@@ -37,7 +37,7 @@
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
 	<body <?php body_class(); ?>>
-				
+				<div class="header-container">
 					<header class="header row" role="banner">
 							
 						 <!-- This navs will be applied to the topbar, above all content 
@@ -52,3 +52,4 @@
 						 </div>
 		 	
 					</header> <!-- end .header -->
+                </div>

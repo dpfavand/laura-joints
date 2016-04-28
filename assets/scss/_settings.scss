@@ -53,7 +53,7 @@ $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #F0E0F1;
 $medium-gray: #cacaca;
-$dark-gray: #97579B;
+$dark-gray: #444;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -67,7 +67,7 @@ $global-padding: 1rem;
 $global-margin: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: .5rem;
+$global-radius: 0rem;
 $global-namespace: false;
 $global-text-direction: ltr;
 $rem-base: 16px;
@@ -100,8 +100,8 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
+    'h1': 40,
+    'h2': 30,
     'h3': 19,
     'h4': 18,
     'h5': 17,
@@ -117,7 +117,7 @@ $header-sizes: (
   ),
 );
 $header-color: inherit;
-$header-lineheight: 1.4;
+$header-lineheight: 1.1;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
