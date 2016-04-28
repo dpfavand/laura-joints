@@ -150,7 +150,7 @@ img {
 article {
     background-color: $white;
     
-    .entry-content {
+    .entry-content, #comments {
         padding: 1rem;
     }
 }

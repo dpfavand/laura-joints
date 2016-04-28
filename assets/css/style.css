@@ -4469,5 +4469,5 @@ img {
 
 article {
   background-color: #fefefe; }
-  article .entry-content {
+  article .entry-content, article #comments {
     padding: 1rem; }
